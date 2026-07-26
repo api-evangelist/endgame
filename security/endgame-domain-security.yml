@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.endgame.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 29 04:44:37 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+  hsts_include_subdomains: true
+  hsts_preload: true
+  note: host answers 301 to https://www.elastic.co/security/endpoint-security for
+    every path probed; HSTS header verified on the redirect response
+domains:
+- domain: endgame.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false

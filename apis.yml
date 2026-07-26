@@ -1,8 +1,28 @@
 aid: endgame
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/endgame.png
 name: Endgame
-description: 'Endgame is a company surfaced as a portfolio company of bessemer-venture-partners, eqt-ventures,
-  kleiner-perkins, menlo-ventures and added to the API Evangelist network as a stub for enrichment. Sector:
-  cybersecurity. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Endgame was an endpoint security company building endpoint protection,
+  threat hunting, and adversary detection technology, and was surfaced into the API
+  Evangelist network as a venture-portfolio lead. It no longer operates as an independent
+  company: Endgame was acquired by Elastic N.V. and its technology was folded into
+  Elastic Security. As of a live probe on 2026-07-20 the endgame.com domain is retained
+  as a redirect only — the site root and every /.well-known/ discovery path answer
+  HTTP 301 to https://www.elastic.co/security/endpoint-security. Endgame publishes
+  no developer portal, API documentation, OpenAPI description, SDKs, CLI, webhook or
+  event surface, changelog, status page, or MCP server of its own. This profile is
+  retained as a verified-defunct record pointing at the successor product at Elastic;
+  teams evaluating the technology should integrate against Elastic Security.'
 url: https://raw.githubusercontent.com/api-evangelist/endgame/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +32,22 @@ x-backed-by:
 - kleiner-perkins
 - menlo-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-api-surface
+x-status: acquired
+x-acquired-by: Elastic N.V.
+x-successor: https://www.elastic.co/security/endpoint-security
+x-api-surface: none
+x-verified: '2026-07-20'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Cybersecurity
+- Endpoint Security
+- Threat Detection
+- Security Operations
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -28,3 +57,12 @@ maintainers:
 common:
 - type: Website
   url: https://www.endgame.com/
+- type: DomainSecurity
+  url: security/endgame-domain-security.yml
+- type: LLMsTxt
+  url: llms/endgame-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

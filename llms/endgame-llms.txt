@@ -1,0 +1,28 @@
+# Endgame
+
+> Endgame was an endpoint security company (endpoint protection, threat hunting,
+> and adversary detection) that was acquired by Elastic N.V. and folded into
+> Elastic Security. The endgame.com domain is retained as a redirect only: every
+> path, including the site root and the entire /.well-known/ surface, answers
+> HTTP 301 to https://www.elastic.co/security/endpoint-security. Endgame
+> publishes no independent developer portal, API documentation, OpenAPI
+> description, SDKs, or MCP server. Anyone looking for the technology that came
+> from Endgame should work against Elastic Security instead.
+
+## Status
+
+- Standalone API surface: none. Verified 2026-07-20 by live probe.
+- endgame.com: redirect-only host, TLS 1.3, HSTS preloaded, no SPF/DMARC/CAA/DNSSEC.
+- Successor product: https://www.elastic.co/security/endpoint-security
+
+## Successor developer resources (Elastic, not Endgame)
+
+- Elastic documentation: https://www.elastic.co/docs
+- Elastic integrations: https://www.elastic.co/integrations/data-integrations
+- Elastic Security Labs: https://www.elastic.co/security-labs
+
+## Artifacts in this profile
+
+- Domain security probe: security/endgame-domain-security.yml
+- Well-known probe (verified-absent): well-known/endgame-well-known.yml
+- APIs.json profile: apis.yml

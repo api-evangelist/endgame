@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: probed
+source: live probe of https://www.endgame.com/.well-known/*
+host: https://www.endgame.com
+result: none
+note: >-
+  Every /.well-known/ path probed returns HTTP 301 to
+  https://www.elastic.co/security/endpoint-security — endgame.com is a
+  redirect-only domain retained after Elastic acquired Endgame, and serves no
+  discovery documents of its own. No security.txt, OIDC/OAuth metadata, API
+  catalog, or ai-plugin.json exists on this host. Recorded as verified-absent;
+  no WellKnown or SecurityTxt pointer is wired, because nothing is published.
+documents:
+- path: /.well-known/security.txt
+  status: 301
+  redirect: https://www.elastic.co/security/endpoint-security
+- path: /.well-known/openid-configuration
+  status: 301
+  redirect: https://www.elastic.co/security/endpoint-security
+- path: /.well-known/oauth-authorization-server
+  status: 301
+  redirect: https://www.elastic.co/security/endpoint-security
+- path: /.well-known/api-catalog
+  status: 301
+  redirect: https://www.elastic.co/security/endpoint-security
+- path: /.well-known/ai-plugin.json
+  status: 301
+  redirect: https://www.elastic.co/security/endpoint-security
