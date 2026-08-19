@@ -38,7 +38,7 @@ x-acquired-by: Elastic N.V.
 x-successor: https://www.elastic.co/security/endpoint-security
 x-api-surface: none
 x-verified: '2026-07-20'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
